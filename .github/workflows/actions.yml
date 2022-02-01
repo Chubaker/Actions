@@ -13,7 +13,7 @@ jobs:
           echo "SHA:" 
           echo $GITHUB_SHA
           echo "Repo:"
-          echo $GITHUB_REPOSITORYa
+          echo $GITHUB_REPOSITORY
           echo "Workspace:"
           echo $GITHUB_WORKSPACE
           echo "Token"
