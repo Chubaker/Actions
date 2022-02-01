@@ -9,10 +9,14 @@ jobs:
       - name: List files
         run:  | 
           pwd
-          ls  
+          echo "Variablen:"
+          echo "SHA:" 
           echo $GITHUB_SHA
-          echo $GITHUB_REPOSITORY
+          echo "Repo:"
+          echo $GITHUB_REPOSITORYa
+          echo "Workspace:"
           echo $GITHUB_WORKSPACE
+          echo "Token"
           echo "${{ github.token }}"        
           #git clone git@github:$github:$GITHUB_REPOSITORY
           #git checkout
