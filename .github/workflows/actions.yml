@@ -14,8 +14,8 @@ jobs:
           echo $GITHUB_REPOSITORY
           echo $GITHUB_WORKSPACE
           echo "${{ github.token }}"        
-          git clone git@github:$github:$GITHUB_REPOSITORY
-          git checkout
+          #git clone git@github:$github:$GITHUB_REPOSITORY
+          #git checkout
       - name: Checkout
         uses: actions/checkout@v1
       - name: List files after checkout
