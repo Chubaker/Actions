@@ -15,7 +15,7 @@ jobs:
         run:  |
           git config --global user.name "Testeruser"
           git config --global user.email "testeruser@keineahnung.de"
-          git commit -m "Automated report"
+          git commit -am "Automated report"
           git push
 
     
