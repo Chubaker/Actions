@@ -1,0 +1,23 @@
+name: "Push commit"
+
+on: push
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: action/checkout@v2
+        with:
+          token: ${{ secrets.PAT }}
+      - name: Create report file
+        run: date +$s > report.txt
+      - name: Commit report
+        run:  |
+          git config --global.user user.name "Testeruser"
+          git config --global.email "testeruser@keineahnung.de"
+          git commit -m "Automated report"
+          git push
+
+    
+
+
