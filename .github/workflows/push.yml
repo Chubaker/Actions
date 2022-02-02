@@ -10,7 +10,7 @@ jobs:
         with:
           token: ${{ secrets.PAT }}
       - name: Create report file
-        run: date +$s > report.txt
+        run: date +%s > report.txt
       - name: Commit report
         run: |
           git config --global user.name "Testeruser"
