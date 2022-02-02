@@ -1,14 +1,24 @@
 name: Actions Workflow
 
 on: 
-   repository_dispatch: 
-     types: [build]
+  #push:
+   # branches:
+      #- master
+     # - 'feature/*' # matches feature/* aber nicht feature/sfasf/a - dieses wird über 'feature/** gematched'
+     # - 'feature/**'
+    #  - '!feature/featC' # muss als letztes stehen und ignoriert den Branch featC
+    #tags:
+   #   - v1.*
+    #paths:
+  #    - '**.js' # alle JavaScript-Files im Workspace
+  # repository_dispatch: 
+    # types: [build]
    # schedule:
   #  - cron: "0/5 * * * *"
   #  - cron: "0/6 * * * *"
   # push:
-   pull_request:
-      types: [closed, assigned, opened, reopened]
+  pull_request:
+    types: [closed, assigned, opened, reopened]
 
 jobs:
   run-github-actions:
