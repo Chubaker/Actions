@@ -10,7 +10,7 @@ jobs:
         os: [macos-latest,ubuntu-latest,windows-latest]
         node_version: [6,8,10,11]
         fail-fast: true #alle Versionen werden laufen auch wenn ein job kaputt geht
-    runs-on: ${{ mmatrix.os }}
+    runs-on: ${{ matrix.os }}
     steps:
       - name: Log node version
         run: node -v 
