@@ -5,6 +5,10 @@ on:
 
 jobs:
   node-version:
+    strategy:
+      matrix:
+        node_version: [6,8,10]
+        fail-fast: true #alle Versionen werden laufen auch wenn ein job kaputt geht
     runs-on: ubuntu-latest
     steps:
       - name: Log node version
