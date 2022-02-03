@@ -8,7 +8,7 @@ jobs:
     strategy:
       matrix:
         os: [macos-latest,ubuntu-latest,windows-latest]
-        node_version: [6,8,10]
+        node_version: [6,8,10,11]
         fail-fast: true #alle Versionen werden laufen auch wenn ein job kaputt geht
     runs-on: ${{ mmatrix.os }}
     steps:
