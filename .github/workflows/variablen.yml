@@ -1,6 +1,6 @@
 name: Context testing
 on: 
-  push:
+  #push:
   pull_request_review:
 
 jobs:
