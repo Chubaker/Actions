@@ -1,7 +1,7 @@
 name: matrix
 
 on: 
-  push
+  push:
 
 jobs:
   node-version:
