@@ -3,7 +3,7 @@ name: Container
 on: push
 
 jobs:
-  node-docker:
+  node-docker1:
     runs-on: ubuntu-latest
     container: #alle weiteren steps laufen nun nicht auf dem Runner (Host mit Ubuntu, sondern im Container ab)
       image: node:13.5.0-alpine3.10 #weitere Konfigurationen können für Container unter container-Objekt gesetzt werden
