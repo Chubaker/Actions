@@ -21,11 +21,11 @@ jobs:
           entrypoint: /usr/local/bin/node
           args: '-v'   
       - uses: actions/checkout@v1   # chmod +x script.sh bevor commit
-      - name: Run a script
-        uses: docker://node:12.14.1-alpine3.10
-        with:
-          entrypoint: ./script.sh
-          args: "Some String"   
+     # - name: Run a script
+    #  uses: docker://node:12.14.1-alpine3.10
+    #    with:
+    #      entrypoint: ./script.sh
+     #     args: "Some String"   
       #- name: send a slack messsage
        #  uses: dockr://technosophos/slack-notify
        # env:
